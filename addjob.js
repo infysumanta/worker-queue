@@ -16,18 +16,18 @@ const queue = new Queue(pgConfig);
       subject: `Hello ${i}`,
     });
 
-    // Example usage
-    await queue.addJob("webhook", {
-      url: "https://example.com",
-      method: "POST",
-      headers: {
-        Authorization: "Bearer your-token",
-      },
-      body: {
-        event: "user.created",
-        data: { id: 123 },
-      },
-    });
+    // // Example usage
+    // await queue.addJob("webhook", {
+    //   url: "https://example.com",
+    //   method: "POST",
+    //   headers: {
+    //     Authorization: "Bearer your-token",
+    //   },
+    //   body: {
+    //     event: "user.created",
+    //     data: { id: 123 },
+    //   },
+    // });
   }
 
   process.exit(0);
